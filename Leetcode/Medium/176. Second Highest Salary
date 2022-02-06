@@ -1,0 +1,5 @@
+// 200ms and 0B
+
+select max(salary) as SecondHighestSalary from employee
+where salary<(select max(salary) from employee);
+
